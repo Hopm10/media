@@ -2,7 +2,7 @@ import math
 
 def prob (n,p,N):
     return (math.comb(N,n)*math.pow(p,n)*math.pow(1-p,N-n))
-print(prob(3,0.5,6))
+# print(prob(3,0.5,6))
 
 def infoMeasure(n,p,N):
     return (-math.log2(prob(n,p,N)))
