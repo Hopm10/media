@@ -41,4 +41,4 @@ def approxEntropy(N,p):
         entropy = entropy + prob(i,p)*infoMeasure(i,p)
         i += 1
     return entropy
-# print(approxEntropy(100,0.5))
+print(approxEntropy(10,0.5))

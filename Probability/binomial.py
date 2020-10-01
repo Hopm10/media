@@ -18,7 +18,7 @@ def infoMeasure(n,p,N):
 '''
 def sumProb(N,p):
     sum = 0
-    for i in range(1, N):
+    for i in range(1, N+1):
         sum = sum + prob(i, p, N)
     return sum
 # print(sumProb(100,0.5))
@@ -37,7 +37,7 @@ def sumProb(N,p):
 def approxEntropy(N,p):
     
     entropy = 0
-    for i in range(1,N):
+    for i in range(1,N+1):
         entropy = entropy + prob(i,p,N)*infoMeasure(i,p,N)
     return entropy
-# print(approxEntropy(200,0.5))
+# print(approxEntropy(500,0.5))
